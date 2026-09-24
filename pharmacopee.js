@@ -7,13 +7,16 @@ const bienfaitsInfo = document.getElementById("bienfaitsInfo");
 
 bienfaitsBtn.addEventListener("click", function () {
 
-    const estCache = window.getComputedStyle(bienfaitsInfo).display === "none";
+const bienfaitsBtn = document.getElementById("bienfaitsBtn");
+const bienfaitsInfo = document.getElementById("bienfaitsInfo");
 
-    if (estCache) {
-        bienfaitsInfo.style.display = "block";
+bienfaitsBtn.addEventListener("click", function () {
+
+    bienfaitsInfo.classList.toggle("visible");
+
+    if (bienfaitsInfo.classList.contains("visible")) {
         bienfaitsBtn.textContent = "Cacher les bienfaits";
     } else {
-        bienfaitsInfo.style.display = "none";
         bienfaitsBtn.textContent = "Voir les bienfaits";
     }
 
