@@ -311,3 +311,12 @@ p {
     background-color: #128C7E;
     transform: scale(1.03);
 }
+.produit {
+    background-color: white;
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 500px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
