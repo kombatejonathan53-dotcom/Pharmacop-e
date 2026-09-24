@@ -5,119 +5,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pharmacopée</title>
+    <title>Pharmacopée LAFIA SCHAP</title>
 
     <link rel="stylesheet" href="pharmacopee.css">
 </head>
 
 <body>
 
-<div class="carte1">
+    <div class="carte1">
 
-    <h1>Pharmacopée LAFIA SCHAP</h1>
+        <h1>Pharmacopée LAFIA SCHAP</h1>
 
-    <h2>La santé par les plantes</h2>
+        <h2>La santé par les plantes</h2>
 
-    <h3>VOTRE SANTE, NOTRE PRIORITE</h3>
-
-    <p>
-        La pharmacopee LAFIA SCHAP est un centre de traitement
-        dont les produits sont fabriqués à base des plantes.
-    </p>
-
-    <p>
-        Dans le monde, chacun veut vivre le plus longtemps possible.
-        Mais nos aliments que nous consommons chaque jour peuvent
-        contribuer à certains problèmes de santé.
-    </p>
-
-    <p>
-        C'est pour ça que la Pharmacopée LAFIA SCHAP vous propose
-        un thé biogenic chinois connu sous son nom
-        "CHINESE GREEN TEA".
-    </p>
-
-
-    <div class="carte2">
-
-        <h2>Qu'est-ce que CHINESE GREEN TEA ???</h2>
+        <h3>VOTRE SANTÉ, NOTRE PRIORITÉ</h3>
 
         <p>
-            Le thé vert Biogenic est spécialement sélectionné à partir
-            de feuilles mûres cueillies à la main de la plante
-            Camellia Sinensis.
-
-            Les feuilles sont entières, non fragmentées, et préparées
-            selon les meilleures techniques afin de préserver
-            l'intégrité des constituants actifs.
-
-            Elles ne sont ni fermentées ni oxydées.
-
-            Le thé est emballé dans son état naturel original.
-            Les feuilles de Camellia Sinensis sont 100% naturelles
-            (herbales), sans ajout de conservateurs ni d'arômes.
+            La Pharmacopée LAFIA SCHAP est un centre proposant
+            des produits à base de plantes.
         </p>
 
+        <p>
+            Nous souhaitons vous présenter des produits naturels
+            et vous informer sur leurs caractéristiques.
+        </p>
+
+        <p>
+            La Pharmacopée LAFIA SCHAP vous propose notamment
+            le thé Biogenic chinois, connu sous le nom
+            "CHINESE GREEN TEA".
+        </p>
+
+
+        <!-- PRÉSENTATION DU THÉ -->
+
+        <div class="carte2">
+
+            <h2>Qu'est-ce que CHINESE GREEN TEA ?</h2>
+
+            <p>
+                Le thé vert Biogenic est sélectionné à partir
+                de feuilles de la plante Camellia Sinensis.
+
+                Les feuilles sont préparées selon des techniques
+                destinées à préserver leurs caractéristiques.
+
+                Elles ne sont pas fermentées comme certains autres
+                types de thé.
+            </p>
+
+        </div>
+
+
+        <!-- BIENFAITS -->
+
+        <h2>Quels sont ses bienfaits ?</h2>
+
+        <button type="button" id="bienfaitsBtn">
+            Voir les bienfaits
+        </button>
+
+
+        <div id="bienfaitsInfo">
+
+            <div class="carte3">
+
+                <h3>Cœur</h3>
+
+                <p>
+                    Le thé vert contient notamment des composés
+                    antioxydants. Pour toute utilisation à des fins
+                    de santé, demandez conseil à un professionnel
+                    de santé.
+                </p>
+
+
+                <h3>AVC (Accident Vasculaire Cérébral)</h3>
+
+                <p>
+                    Un AVC est une urgence médicale liée à une
+                    perturbation de la circulation sanguine dans
+                    le cerveau. En cas de signes évocateurs d'un AVC,
+                    il faut contacter immédiatement les services
+                    d'urgence.
+                </p>
+
+            </div>
+
+
+            <!-- BOUTON DE COMMANDE DU THÉ -->
+
+            <button
+                type="button"
+                class="commanderBtn"
+                data-produit="Thé Biogenic Chinois">
+                Commander sur WhatsApp
+            </button>
+
+        </div>
+
     </div>
 
 
-    <h2>Quels sont ses bienfaits ???</h2>
+    <!-- PRODUIT 2 -->
 
-    <button id="bienfaitsBtn">Voir les bienfaits</button>
+    <div class="produit">
 
+        <h3>Produit 2</h3>
 
-    <div id="bienfaitsInfo">
+        <p>
+            Description du produit 2.
+        </p>
 
-        <div class="carte3">
-
-            <h3>Cœur</h3>
-
-            <p>
-                Le thé vert chinois contient des catéchines et
-                d'autres antioxydants qui peuvent contribuer
-                au fonctionnement normal de l'organisme.
-            </p>
-
-
-            <h3>AVC (Accident Vasculaire)</h3>
-
-            <p>
-                L'AVC est une maladie résultant d'un mauvais apport
-                sanguin au cerveau.
-
-                L'approvisionnement sanguin peut être interrompu
-                soit par un blocage des vaisseaux (occlusion),
-                soit par une fuite de sang hors des vaisseaux
-                alimentant le cerveau.
-
-                Lorsque le cerveau est privé de sang, cela peut
-                provoquer des lésions cérébrales.
-
-                Les facteurs de risque de l'AVC sont nombreux.
-            </p>
-
-       
-       <button type="button">Commander sur WhatsApp</button>
+        <button
+            type="button"
+            class="commanderBtn"
+            data-produit="Produit 2">
+            Commander sur WhatsApp
+        </button>
 
     </div>
 
-</div>
-<div class="produit">
-    <h3>Produit 2</h3>
-    <p>Description du produit 2.</p>
-    <button class="commanderBtn" data-produit="Produit 2">
-        Commander sur WhatsApp
-    </button>
-</div>
 
-<div class="produit">
-    <h3>Produit 3</h3>
-    <p>Description du produit 3.</p>
-    <button class="commanderBtn" data-produit="Produit 3">
-        Commander sur WhatsApp
-    </button>
-</div>
-<script src="pharmacopee.js"></script>
-<link rel="stylesheet" href="pharmacopee.css">
+    <!-- PRODUIT 3 -->
+
+    <div class="produit">
+
+        <h3>Produit 3</h3>
+
+        <p>
+            Description du produit 3.
+        </p>
+
+        <button
+            type="button"
+            class="commanderBtn"
+            data-produit="Produit 3">
+            Commander sur WhatsApp
+        </button>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="pharmacopee.js"></script>
+
 </body>
+
 </html>
