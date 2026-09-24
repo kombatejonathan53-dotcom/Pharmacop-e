@@ -288,6 +288,11 @@ p {
     margin-top: 15px;
     transition: 0.3s;
 }
+
+.commanderBtn:hover {
+    background-color: #128C7E;
+    transform: scale(1.03);
+}
 .produit {
     background-color: white;
     margin: 30px auto;
