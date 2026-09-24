@@ -12,3 +12,13 @@ bienfaitsBtn.addEventListener("click", function () {
     }
 
 });
+const commanderBtn = document.getElementById("commanderBtn");
+
+commanderBtn.addEventListener("click", function() {
+    const numero = "22893956915";
+    const message = "Bonjour, je souhaite commander le Thé Biogenic Chinois.";
+
+    const lien = "https://wa.me/" + numero + "?text=" + encodeURIComponent(message);
+
+    window.open(lien, "_blank");
+});
