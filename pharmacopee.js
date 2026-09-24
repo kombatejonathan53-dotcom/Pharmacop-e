@@ -30,7 +30,7 @@ boutonsCommande.forEach(function (bouton) {
 
         const produit = bouton.getAttribute("data-produit");
 
-        const numero = "228TONNUMERO";
+        const numero = "22893956915";
 
         const message =
             "Bonjour, je souhaite commander : " + produit + ".";
