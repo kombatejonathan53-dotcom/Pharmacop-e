@@ -276,7 +276,7 @@ p {
     margin: 8px auto 0;
     border-radius: 5px;
 }
-#commanderBtn {
+.commanderBtn {
     background-color: #25D366;
     color: white;
     border: none;
@@ -289,6 +289,10 @@ p {
     transition: 0.3s;
 }
 
+.commanderBtn:hover {
+    background-color: #128C7E;
+    transform: scale(1.03);
+}
 #commanderBtn:hover {
     background-color: #128C7E;
     transform: scale(1.03);
