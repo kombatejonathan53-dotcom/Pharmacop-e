@@ -199,24 +199,31 @@ p {
 /* ========================================
    AFFICHAGE DES BIENFAITS
 ======================================== */
+/* ================================
+   BIENFAITS
+================================ */
 
 #bienfaitsInfo {
-    display: block;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(-10px);
-
-    transition:
-        max-height 0.6s ease,
-        opacity 0.5s ease,
-        transform 0.5s ease;
+    display: none;
 }
 
 #bienfaitsInfo.visible {
-    max-height: 1500px;
-    opacity: 1;
-    transform: translateY(0);
+    display: block;
+}
+
+#bienfaitsInfo h3 {
+    position: relative;
+    padding-bottom: 8px;
+}
+
+#bienfaitsInfo h3::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #16833a;
+    margin: 8px auto 0;
+    border-radius: 5px;
 }
 
 
