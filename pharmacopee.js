@@ -7,7 +7,9 @@ const bienfaitsInfo = document.getElementById("bienfaitsInfo");
 
 bienfaitsBtn.addEventListener("click", function () {
 
-    if (bienfaitsInfo.style.display === "none") {
+    const estCache = window.getComputedStyle(bienfaitsInfo).display === "none";
+
+    if (estCache) {
         bienfaitsInfo.style.display = "block";
         bienfaitsBtn.textContent = "Cacher les bienfaits";
     } else {
