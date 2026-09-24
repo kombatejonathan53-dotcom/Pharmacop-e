@@ -288,6 +288,15 @@ p {
     margin-top: 15px;
     transition: 0.3s;
 }
+.produit {
+    background-color: white;
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 500px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
 .commanderBtn:hover {
     background-color: #128C7E;
