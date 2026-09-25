@@ -383,3 +383,34 @@ p {
     color: #555;
     letter-spacing: 1px;
 }
+/* =========================
+   CARTES DES PRODUITS
+   ========================= */
+
+.produit {
+    background: #f8fff9;
+    border: 1px solid #d8eadc;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.produit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
+}
+
+.produit h3 {
+    color: #16833a;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.produit p {
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+}
