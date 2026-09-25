@@ -361,3 +361,25 @@ p {
         width: 100%;
     }
        }
+/* =========================
+   EN-TÊTE PROFESSIONNEL
+   ========================= */
+
+.carte1 h1 {
+    font-size: 32px;
+    color: #126b35;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.carte1 h2 {
+    color: #16833a;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carte1 h3 {
+    text-align: center;
+    color: #555;
+    letter-spacing: 1px;
+}
