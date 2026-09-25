@@ -440,3 +440,35 @@ p {
 .commanderBtn:active {
     transform: scale(0.97);
 }
+/* =========================
+   CARTE PRINCIPALE
+   ========================= */
+
+.carte1 {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #d8eadc;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+/* Texte principal */
+
+.carte1 > p {
+    color: #444;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* =========================
+   ARRIÈRE-PLAN
+   ========================= */
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #eaf8ee, #f8fff9);
+    font-family: Arial, sans-serif;
+}
