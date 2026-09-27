@@ -520,3 +520,65 @@ body {
     }
 
 }
+/* =========================
+   MOYENS DE PAIEMENT
+   ========================= */
+
+.paiement {
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: #f8fff9;
+    border: 1px solid #d8eadc;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.paiement h2 {
+    color: #16833a;
+    margin-bottom: 10px;
+}
+
+.paiement p {
+    text-align: center;
+    color: #555;
+}
+
+.paiement label {
+    display: block;
+    margin: 15px 0;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid #d8eadc;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.paiement label:hover {
+    background-color: #eef9f0;
+}
+
+.paiement input {
+    margin-right: 10px;
+}
+
+#continuerPaiementBtn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #16833a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#continuerPaiementBtn:hover {
+    background-color: #0f632b;
+   }
