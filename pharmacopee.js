@@ -91,12 +91,16 @@ continuerPaiementBtn.addEventListener("click", function () {
         return;
     }
 
-    paiementMessage.innerHTML =
-        "✅ <strong>Commande préparée !</strong><br><br>" +
-        "Nom : " + nom + "<br>" +
-        "Téléphone : " + telephone + "<br>" +
-        "Produit : " + produit + "<br>" +
-        "Paiement : " + paiementChoisi.value;
+    const message =
+        "Bonjour, je souhaite passer une commande.%0A%0A" +
+        "Nom : " + encodeURIComponent(nom) + "%0A" +
+        "Téléphone : " + encodeURIComponent(telephone) + "%0A" +
+        "Produit : " + encodeURIComponent(produit) + "%0A" +
+        "Moyen de paiement : " + encodeURIComponent(paiementChoisi.value);
 
-    paiementMessage.style.color = "#16833a";
+    const numeroWhatsApp = "22893956915";
+
+    const url = "https://wa.me/" + numeroWhatsApp + "?text=" + message;
+
+    window.open(url, "_blank");
 });
