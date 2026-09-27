@@ -54,3 +54,24 @@ boutonsCommande.forEach(function (bouton) {
     });
 
 });
+const continuerPaiementBtn = document.getElementById("continuerPaiementBtn");
+const paiementMessage = document.getElementById("paiementMessage");
+
+continuerPaiementBtn.addEventListener("click", function () {
+
+    const paiementChoisi = document.querySelector(
+        'input[name="paiement"]:checked'
+    );
+
+    if (!paiementChoisi) {
+        paiementMessage.textContent =
+            "Veuillez choisir un moyen de paiement.";
+        paiementMessage.style.color = "red";
+        return;
+    }
+
+    paiementMessage.textContent =
+        "Moyen de paiement choisi : " + paiementChoisi.value;
+
+    paiementMessage.style.color = "#16833a";
+});
