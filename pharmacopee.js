@@ -57,44 +57,60 @@ boutonsCommande.forEach(function (bouton) {
 const continuerPaiementBtn = document.getElementById("continuerPaiementBtn");
 const paiementMessage = document.getElementById("paiementMessage");
 
-continuerPaiementBtn.addEventListener("click", function () {
+if (continuerPaiementBtn) {
 
-    const nom = document.getElementById("nomClient").value.trim();
-    const telephone = document.getElementById("telephoneClient").value.trim();
-    const produit = document.getElementById("produitCommande").value;
+    continuerPaiementBtn.addEventListener("click", function () {
 
-    const paiementChoisi = document.querySelector(
-        'input[name="paiement"]:checked'
-    );
+        const nom = document.getElementById("nomClient").value.trim();
+        const telephone = document.getElementById("telephoneClient").value.trim();
+        const produit = document.getElementById("produitCommande").value;
 
-    if (nom === "") {
-        paiementMessage.textContent = "Veuillez entrer votre nom.";
-        paiementMessage.style.color = "red";
-        return;
-    }
+        const paiementChoisi = document.querySelector(
+            'input[name="paiement"]:checked'
+        );
 
-    if (telephone === "") {
-        paiementMessage.textContent = "Veuillez entrer votre numéro de téléphone.";
-        paiementMessage.style.color = "red";
-        return;
-    }
+        if (nom === "") {
+            paiementMessage.textContent = "Veuillez entrer votre nom.";
+            paiementMessage.style.color = "red";
+            return;
+        }
 
-    if (produit === "") {
-        paiementMessage.textContent = "Veuillez choisir un produit.";
-        paiementMessage.style.color = "red";
-        return;
-    }
+        if (telephone === "") {
+            paiementMessage.textContent = "Veuillez entrer votre numéro de téléphone.";
+            paiementMessage.style.color = "red";
+            return;
+        }
 
-    if (!paiementChoisi) {
-        paiementMessage.textContent = "Veuillez choisir un moyen de paiement.";
-        paiementMessage.style.color = "red";
-        return;
-    }
+        if (produit === "") {
+            paiementMessage.textContent = "Veuillez choisir un produit.";
+            paiementMessage.style.color = "red";
+            return;
+        }
 
-    const message =
-    "Bonjour, je souhaite passer une commande.%0A%0A" +
-    "Nom : " + encodeURIComponent(nom) + "%0A" +
-    "Téléphone : " + encodeURIComponent(telephone) + "%0A" +
-    "Produit : " + encodeURIComponent(produit) + "%0A" +
-    "Moyen de paiement : " + encodeURIComponent(paiementChoisi.value) + "%0A%0A" +
-    "Je vais effectuer le paiement avec le moyen choisi et je souhaite confirmer ma commande.";
+        if (!paiementChoisi) {
+            paiementMessage.textContent = "Veuillez choisir un moyen de paiement.";
+            paiementMessage.style.color = "red";
+            return;
+        }
+
+        const message =
+            "Bonjour, je souhaite passer une commande.%0A%0A" +
+            "Nom : " + encodeURIComponent(nom) + "%0A" +
+            "Téléphone : " + encodeURIComponent(telephone) + "%0A" +
+            "Produit : " + encodeURIComponent(produit) + "%0A" +
+            "Moyen de paiement : " + encodeURIComponent(paiementChoisi.value) + "%0A%0A" +
+            "Je vais effectuer le paiement avec le moyen choisi et je souhaite confirmer ma commande.";
+
+        const numeroWhatsApp = "22893956915";
+
+        const url =
+            "https://wa.me/" +
+            numeroWhatsApp +
+            "?text=" +
+            message;
+
+        window.open(url, "_blank");
+
+    });
+
+}
