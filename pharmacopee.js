@@ -59,19 +59,44 @@ const paiementMessage = document.getElementById("paiementMessage");
 
 continuerPaiementBtn.addEventListener("click", function () {
 
+    const nom = document.getElementById("nomClient").value.trim();
+    const telephone = document.getElementById("telephoneClient").value.trim();
+    const produit = document.getElementById("produitCommande").value;
+
     const paiementChoisi = document.querySelector(
         'input[name="paiement"]:checked'
     );
 
-    if (!paiementChoisi) {
-        paiementMessage.textContent =
-            "Veuillez choisir un moyen de paiement.";
+    if (nom === "") {
+        paiementMessage.textContent = "Veuillez entrer votre nom.";
         paiementMessage.style.color = "red";
         return;
     }
 
-    paiementMessage.textContent =
-        "Moyen de paiement choisi : " + paiementChoisi.value;
+    if (telephone === "") {
+        paiementMessage.textContent = "Veuillez entrer votre numéro de téléphone.";
+        paiementMessage.style.color = "red";
+        return;
+    }
+
+    if (produit === "") {
+        paiementMessage.textContent = "Veuillez choisir un produit.";
+        paiementMessage.style.color = "red";
+        return;
+    }
+
+    if (!paiementChoisi) {
+        paiementMessage.textContent = "Veuillez choisir un moyen de paiement.";
+        paiementMessage.style.color = "red";
+        return;
+    }
+
+    paiementMessage.innerHTML =
+        "✅ <strong>Commande préparée !</strong><br><br>" +
+        "Nom : " + nom + "<br>" +
+        "Téléphone : " + telephone + "<br>" +
+        "Produit : " + produit + "<br>" +
+        "Paiement : " + paiementChoisi.value;
 
     paiementMessage.style.color = "#16833a";
 });
