@@ -92,15 +92,9 @@ continuerPaiementBtn.addEventListener("click", function () {
     }
 
     const message =
-        "Bonjour, je souhaite passer une commande.%0A%0A" +
-        "Nom : " + encodeURIComponent(nom) + "%0A" +
-        "Téléphone : " + encodeURIComponent(telephone) + "%0A" +
-        "Produit : " + encodeURIComponent(produit) + "%0A" +
-        "Moyen de paiement : " + encodeURIComponent(paiementChoisi.value);
-
-    const numeroWhatsApp = "22893956915";
-
-    const url = "https://wa.me/" + numeroWhatsApp + "?text=" + message;
-
-    window.open(url, "_blank");
-});
+    "Bonjour, je souhaite passer une commande.%0A%0A" +
+    "Nom : " + encodeURIComponent(nom) + "%0A" +
+    "Téléphone : " + encodeURIComponent(telephone) + "%0A" +
+    "Produit : " + encodeURIComponent(produit) + "%0A" +
+    "Moyen de paiement : " + encodeURIComponent(paiementChoisi.value) + "%0A%0A" +
+    "Je vais effectuer le paiement avec le moyen choisi et je souhaite confirmer ma commande.";
