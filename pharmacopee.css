@@ -618,3 +618,6 @@ body {
 .paiement label {
     font-size: 16px;
 }
+.paiement {
+    background-color: yellow !important;
+}
