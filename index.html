@@ -177,23 +177,71 @@
     </button>
 
 </div>
-<!-- MOYENS DE PAIEMENT -->
+<!-- COMMANDE ET PAIEMENT -->
 
 <div class="paiement">
 
-    <h2>Choisissez votre moyen de paiement</h2>
+    <h2>Finaliser votre commande</h2>
 
-    <p>
-        Sélectionnez votre moyen de paiement pour continuer votre commande.
-    </p>
+    <p>Remplissez les informations ci-dessous.</p>
+
+    <input
+        type="text"
+        id="nomClient"
+        placeholder="Votre nom"
+    >
+
+    <input
+        type="tel"
+        id="telephoneClient"
+        placeholder="Votre numéro de téléphone"
+    >
+
+    <label for="produitCommande">
+        Produit :
+    </label>
+
+    <select id="produitCommande">
+
+        <option value="">
+            -- Choisissez un produit --
+        </option>
+
+        <option value="Thé Biogenic Chinois">
+            Thé Biogenic Chinois
+        </option>
+
+        <option value="Ginseng Tea">
+            Ginseng Tea
+        </option>
+
+        <option value="Comprimés de calcium">
+            Comprimés de calcium
+        </option>
+
+        <option value="Menopause Tea">
+            Menopause Tea
+        </option>
+
+    </select>
+
+    <h3>Choisissez votre moyen de paiement</h3>
 
     <label>
-        <input type="radio" name="paiement" value="MTN Mobile Money">
+        <input
+            type="radio"
+            name="paiement"
+            value="MTN Mobile Money"
+        >
         MTN Mobile Money
     </label>
 
     <label>
-        <input type="radio" name="paiement" value="TMoney">
+        <input
+            type="radio"
+            name="paiement"
+            value="TMoney"
+        >
         TMoney
     </label>
 
