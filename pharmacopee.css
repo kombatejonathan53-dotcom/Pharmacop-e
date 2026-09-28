@@ -674,3 +674,12 @@ body {
     margin: 1 auto 15px;
     border-radius: 20px;
 }
+.carte img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin: 1 auto 15px;
+    border-radius: 20px;
+}
