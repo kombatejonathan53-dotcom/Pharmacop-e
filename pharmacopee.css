@@ -710,3 +710,39 @@ body {
 }
 .h3{
    color: green 
+             }
+/* FIX CARTES - VERSION MOBILE PARFAITE */
+.card-principe {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #e8f5e9;
+  border-radius: 16px;
+  padding: 18px;
+  margin: 12px 0;
+}
+.card-principe .check {
+  background: #1a5c2a;
+  color: white;
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+}
+.card-principe .texte {
+  flex: 1;
+}
+.card-principe strong {
+  display: block;
+  font-size: 16px;
+  color: #0f3d1b;
+}
+.card-principe span {
+  font-size: 14px;
+  color: #333;
+     }
